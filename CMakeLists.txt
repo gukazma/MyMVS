@@ -11,7 +11,7 @@ endif ()
 
 get_filename_component(ROOT_NAME ${CMAKE_SOURCE_DIR} NAME)
 message("Configure project: ${ROOT_NAME}")
-project(${ROOT_NAME} VERSION 0.1 LANGUAGES CXX)
+project(${ROOT_NAME} VERSION 0.1 LANGUAGES CXX CUDA)
 
 option(ENABLE_DOCS "Enable doxygen docs" ON)
 option(ENABLE_QTAPP "Enable config Qt app" OFF)
