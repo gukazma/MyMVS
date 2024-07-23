@@ -39,7 +39,7 @@ if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
       "In-source builds not allowed. Please make a new directory (called a build directory) and run CMake from there."
   )
 endif()
-
+find_package(OpenCV CONFIG REQUIRED)
 add_subdirectory(Modules)
 add_subdirectory(Apps)
 add_subdirectory(Tests)
