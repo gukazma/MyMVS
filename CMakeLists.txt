@@ -40,6 +40,8 @@ if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
   )
 endif()
 
+find_package(OpenCV CONFIG REQUIRED)
+
 add_subdirectory(Modules)
 add_subdirectory(Apps)
 add_subdirectory(Tests)
