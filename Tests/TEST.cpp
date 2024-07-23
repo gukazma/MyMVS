@@ -53,7 +53,7 @@ TEST(MYTEST0, A)
     sgm_option.p2_init = 150;
     // 视差图填充
     // 视差图填充的结果并不可靠，若工程，不建议填充，若科研，则可填充
-    sgm_option.is_fill_holes = false;
+    sgm_option.is_fill_holes = true;
 
     printf("w = %d, h = %d, d = [%d,%d]\n\n", width, height, sgm_option.min_disparity, sgm_option.max_disparity);
 
@@ -126,6 +126,4 @@ TEST(MYTEST0, A)
     bytes_left = nullptr;
     delete[] bytes_right;
     bytes_right = nullptr;
-
-    system("pause");
 }
